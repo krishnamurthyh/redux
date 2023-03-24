@@ -23,21 +23,6 @@ const ProductsList = () => {
         console.log(p)
     }
 
-    const productView = () => {
-
-        const content = (
-            <div>
-                <h3>{selectedProduct?.title}</h3>
-                <p>{selectedProduct?.description}</p>
-            </div>
-        )
-        return (
-            <Popover content={content} title="Title">
-                <Button type="primary">Hover me</Button>
-            </Popover>
-        )
-    }
-
     return (
         <>
             {!products.length && <Button type='primary' onClick={handleButtonClick}> Fetch Details</Button>}
