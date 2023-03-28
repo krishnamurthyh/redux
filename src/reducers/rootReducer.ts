@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import { fieldReducer } from "./fieldReducer";
+import { cartReducer } from "./cartReducer";
+import { productReducer } from "./productReducer";
 
 const rootReducer = combineReducers({
-    fields: fieldReducer
+    products: productReducer,
+    cart: cartReducer
 })
 
 export default rootReducer

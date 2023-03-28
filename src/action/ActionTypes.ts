@@ -1,6 +1,5 @@
 export enum ActionTypes {
-    create = 'CREATE',
-    delete = 'DELETE',
-    update = 'UPDATE',
+    add = 'ADD',
+    remove = 'REMOVE',
     read = 'READ'
 }
